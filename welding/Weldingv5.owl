@@ -1,0 +1,1894 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/welding"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/welding">
+    <Prefix name="" IRI="http://www.semanticweb.org/welding"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.obolibrary.org/obo/bfo/2020/bfo.owl</Import>
+    <Import>https://www.industrialontologies.org/ontology/core/Core/</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal>Arkopaul Sarkar</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal>An ontology for joining process</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000024"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/Temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArcWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArcWeldingInstrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArcWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bonding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BrazedJoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BrazingNozzle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BrazingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColdWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Combusting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeformatingAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deforming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiffusionBonding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dispensing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectroSlagWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExplosiveWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fastening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FillerMetal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fitting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlashWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flux"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FluxCoatedElectrode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FluxedCoreArcWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FrictionWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasBrazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasBrazingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasProducedByFlux"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingActionInArcWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingActionInBrazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingActionInGasBrazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingActionInMIG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingActionInMMA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingActionInSoldering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingActionInTIG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingInBrazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingInGasBrazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingInMIGWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingInMMAWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingInSoldering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingInTIGWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InertGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JoiningProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Joint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MIGWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MIGWeldingInstrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MIGWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MMAWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MMAWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MMAWeldingUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Melting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeltingActionInArcWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeltingActionInBrazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeltingActionInMIG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeltingActionInMMA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeltingActionInTIG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeltingInBrazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeltingInMIGWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeltingInMMAWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeltingInTIGWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OxyAcetylene"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlasmaArcWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProjectionWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResistanceWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeamWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shielding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShieldingAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShieldingByFlux"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShieldingByFluxAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShieldingByFluxProducedGasAndSlag"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShieldingByFluxProducedGasAndSlagAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShieldingByInertGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShieldingByInertGasAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SlagProducedByFlux"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Soldering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolderingIron"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolderingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolidStateWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolidWireElectrode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolidificationOfBaseMetalAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolidificationOfFillerAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Solidifying"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolidifyingBaseMetal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolidifyingFiller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpotWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubmergedArcWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TIGWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TIGWeldingInstrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TIGWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemperatureGreaterThan450Celcius"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemperatureLessThanEqual450Celcius"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermitWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermochemicalWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TungstenElectrode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UltrasonicWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeldedAssembly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeldedJoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Welding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeldingInstrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/Assembly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/CommercialServiceAgreement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/Machine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ManufacturingProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ObjectiveSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000056"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000057"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000101"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000117"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000166"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000167"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000183"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000196"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAgentAsParticipant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasConnector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInstrumentAsParticipant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPatientAsParticipant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrimaryBrazingMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrimaryMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrimaryMethodEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrimarySolderingMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrimaryWeldingMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participatesAsAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participatesAsInstrument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participatesAsPatient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/componentPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/hasComponentPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/hasInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/hasSpecifiedOutput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/isInputOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/isOutputOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://www.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://www.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#ArcWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#ArcWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ArcWeldingSpecification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#DeformatingAction"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                    <Class IRI="#ShieldingAction"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                    <Class IRI="#HeatingActionInArcWelding"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                    <Class IRI="#MeltingActionInArcWelding"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                    <Class IRI="#SolidificationOfBaseMetalAction"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Brazing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/hasSpecifiedOutput"/>
+            <ObjectIntersectionOf>
+                <Class IRI="https://www.industrialontologies.org/ontology/core/Core/Assembly"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasConnector"/>
+                    <Class IRI="#BrazedJoint"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Brazing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#BrazingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#BrazingSpecification"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                <Class IRI="#ShieldingAction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <Class IRI="#HeatingActionInBrazing"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <Class IRI="#MeltingActionInBrazing"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <Class IRI="#SolidificationOfFillerAction"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GasBrazing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#GasBrazingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GasBrazingSpecification"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                <Class IRI="#ShieldingByFluxAction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <Class IRI="#HeatingActionInGasBrazing"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <Class IRI="#MeltingActionInBrazing"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <Class IRI="#SolidificationOfFillerAction"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GasProducedByFlux"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/isOutputOf"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Melting"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/hasInput"/>
+                    <Class IRI="#FluxCoatedElectrode"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HeatingActionInArcWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Heating"/>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#Melting"/>
+                        <ObjectAllValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                            <Class IRI="#SolidifyingBaseMetal"/>
+                        </ObjectAllValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HeatingActionInBrazing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#HeatingInBrazing"/>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#MeltingInBrazing"/>
+                        <ObjectAllValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                            <Class IRI="#SolidifyingFiller"/>
+                        </ObjectAllValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HeatingActionInGasBrazing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#HeatingInGasBrazing"/>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#MeltingInBrazing"/>
+                        <ObjectAllValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                            <Class IRI="#SolidifyingFiller"/>
+                        </ObjectAllValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HeatingActionInMIG"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#HeatingInMIGWelding"/>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#MeltingInMIGWelding"/>
+                        <ObjectAllValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                            <Class IRI="#SolidifyingBaseMetal"/>
+                        </ObjectAllValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HeatingActionInMMA"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#HeatingInMMAWelding"/>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#MeltingInMMAWelding"/>
+                        <ObjectAllValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                            <Class IRI="#SolidifyingBaseMetal"/>
+                        </ObjectAllValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HeatingActionInSoldering"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#HeatingInSoldering"/>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#Melting"/>
+                        <ObjectAllValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                            <Class IRI="#SolidifyingFiller"/>
+                        </ObjectAllValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HeatingActionInTIG"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#HeatingInTIGWelding"/>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#MeltingInTIGWelding"/>
+                        <ObjectAllValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                            <Class IRI="#SolidifyingBaseMetal"/>
+                        </ObjectAllValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HeatingInBrazing"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Heating"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPatientAsParticipant"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                        <Class IRI="#TemperatureGreaterThan450Celcius"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HeatingInGasBrazing"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#HeatingInBrazing"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Combusting"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasPatientAsParticipant"/>
+                        <Class IRI="#FillerMetal"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasPatientAsParticipant"/>
+                        <Class IRI="#OxyAcetylene"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectAllValuesFrom>
+                        <ObjectProperty IRI="#hasInstrumentAsParticipant"/>
+                        <Class IRI="#BrazingNozzle"/>
+                    </ObjectAllValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HeatingInMIGWelding"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Heating"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasInstrumentAsParticipant"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#SolidWireElectrode"/>
+                    <ObjectAllValuesFrom>
+                        <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/componentPartOf"/>
+                        <Class IRI="#MIGWeldingInstrument"/>
+                    </ObjectAllValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HeatingInMMAWelding"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Heating"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasInstrumentAsParticipant"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#FluxCoatedElectrode"/>
+                    <ObjectAllValuesFrom>
+                        <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/componentPartOf"/>
+                        <Class IRI="#MMAWeldingUnit"/>
+                    </ObjectAllValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HeatingInSoldering"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Heating"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPatientAsParticipant"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000196"/>
+                        <Class IRI="#TemperatureLessThanEqual450Celcius"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HeatingInTIGWelding"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Heating"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasInstrumentAsParticipant"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#TungstenElectrode"/>
+                    <ObjectAllValuesFrom>
+                        <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/componentPartOf"/>
+                        <Class IRI="#TIGWeldingInstrument"/>
+                    </ObjectAllValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InertGas"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/isOutputOf"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Dispensing"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasInstrumentAsParticipant"/>
+                    <ObjectUnionOf>
+                        <Class IRI="#MIGWeldingInstrument"/>
+                        <Class IRI="#TIGWeldingInstrument"/>
+                    </ObjectUnionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#JoiningProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/hasSpecifiedOutput"/>
+            <ObjectIntersectionOf>
+                <Class IRI="https://www.industrialontologies.org/ontology/core/Core/Assembly"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasConnector"/>
+                    <Class IRI="#Joint"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MIGWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#MIGWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MIGWeldingSpecification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#DeformatingAction"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                    <Class IRI="#ShieldingByInertGasAction"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                    <Class IRI="#HeatingActionInMIG"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                    <Class IRI="#MeltingActionInMIG"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                    <Class IRI="#SolidificationOfBaseMetalAction"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MMAWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#MMAWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MMAWeldingSpecification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#DeformatingAction"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                    <Class IRI="#ShieldingByFluxProducedGasAndSlagAction"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                    <Class IRI="#HeatingActionInMMA"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                    <Class IRI="#MeltingActionInMMA"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                    <Class IRI="#SolidificationOfBaseMetalAction"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MeltingActionInArcWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Melting"/>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                    <Class IRI="#SolidifyingBaseMetal"/>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MeltingActionInBrazing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#MeltingInBrazing"/>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                    <Class IRI="#SolidifyingFiller"/>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MeltingActionInMIG"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#MeltingInMIGWelding"/>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                    <Class IRI="#SolidifyingBaseMetal"/>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MeltingActionInMMA"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#MeltingInMMAWelding"/>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                    <Class IRI="#SolidifyingBaseMetal"/>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MeltingActionInTIG"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#MeltingInTIGWelding"/>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                    <Class IRI="#SolidifyingBaseMetal"/>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MeltingInBrazing"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Melting"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasPatientAsParticipant"/>
+                <Class IRI="#FillerMetal"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MeltingInMIGWelding"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Melting"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPatientAsParticipant"/>
+                <Class IRI="#SolidWireElectrode"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPatientAsParticipant"/>
+                <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialComponent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MeltingInMMAWelding"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Melting"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPatientAsParticipant"/>
+                <Class IRI="#FluxCoatedElectrode"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPatientAsParticipant"/>
+                <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialComponent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MeltingInTIGWelding"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Melting"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPatientAsParticipant"/>
+                <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialComponent"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ShieldingByFlux"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAgentAsParticipant"/>
+            <Class IRI="#Flux"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ShieldingByFluxAction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <Class IRI="#ShieldingByFlux"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ShieldingByFluxProducedGasAndSlag"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Shielding"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasAgentAsParticipant"/>
+                <ObjectUnionOf>
+                    <Class IRI="#GasProducedByFlux"/>
+                    <Class IRI="#SlagProducedByFlux"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ShieldingByFluxProducedGasAndSlagAction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <Class IRI="#ShieldingByFluxProducedGasAndSlag"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ShieldingByInertGas"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Shielding"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasAgentAsParticipant"/>
+                <Class IRI="#InertGas"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ShieldingByInertGasAction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <Class IRI="#ShieldingByInertGas"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SlagProducedByFlux"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/isOutputOf"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#SolidifyingBaseMetal"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000062"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#Melting"/>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/hasInput"/>
+                            <Class IRI="#FluxCoatedElectrode"/>
+                        </ObjectSomeValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Soldering"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#SolderingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SolidificationOfBaseMetalAction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <Class IRI="#SolidifyingBaseMetal"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SolidificationOfFillerAction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <Class IRI="#SolidifyingFiller"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SolidifyingBaseMetal"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Solidifying"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#participatesAsPatient"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                    <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialComponent"/>
+                </ObjectSomeValuesFrom>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SolidifyingFiller"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Solidifying"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasPatientAsParticipant"/>
+                <Class IRI="#FillerMetal"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TIGWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#TIGWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TIGWeldingSpecification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#DeformatingAction"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                    <Class IRI="#ShieldingByInertGasAction"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                    <Class IRI="#HeatingActionInTIG"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                    <Class IRI="#MeltingActionInTIG"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                    <Class IRI="#SolidificationOfBaseMetalAction"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WeldedAssembly"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/hasComponentPart"/>
+                <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialComponent"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasConnector"/>
+                <Class IRI="#WeldedJoint"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Welding"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/hasSpecifiedOutput"/>
+            <ObjectIntersectionOf>
+                <Class IRI="https://www.industrialontologies.org/ontology/core/Core/Assembly"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#hasConnector"/>
+                    <Class IRI="#WeldedJoint"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Welding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#WeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WeldingSpecification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+            <Class IRI="#DeformatingAction"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/Assembly"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/hasComponentPart"/>
+            <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialComponent"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+                <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/Temperature"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArcWelding"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArcWeldingInstrument"/>
+        <Class IRI="#WeldingInstrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArcWeldingSpecification"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bonding"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrazedJoint"/>
+        <Class IRI="#Joint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brazing"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrazingNozzle"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/Machine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrazingSpecification"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColdWelding"/>
+        <Class IRI="#SolidStateWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Combusting"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeformatingAction"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deforming"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiffusionBonding"/>
+        <Class IRI="#SolidStateWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dispensing"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectroSlagWelding"/>
+        <Class IRI="#ResistanceWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExplosiveWelding"/>
+        <Class IRI="#SolidStateWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fastening"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FillerMetal"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fitting"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlashWelding"/>
+        <Class IRI="#ResistanceWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flux"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FluxCoatedElectrode"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FluxedCoreArcWelding"/>
+        <Class IRI="#ArcWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FrictionWelding"/>
+        <Class IRI="#SolidStateWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasBrazing"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasBrazingSpecification"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasProducedByFlux"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasWelding"/>
+        <Class IRI="#ThermochemicalWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heating"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingActionInArcWelding"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingActionInBrazing"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingActionInGasBrazing"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingActionInMIG"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingActionInMMA"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingActionInSoldering"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingActionInTIG"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingInBrazing"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingInGasBrazing"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingInMIGWelding"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingInMMAWelding"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingInSoldering"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingInTIGWelding"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InertGas"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JoiningProcess"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Joint"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000024"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MIGWelding"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MIGWeldingInstrument"/>
+        <Class IRI="#ArcWeldingInstrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MIGWeldingSpecification"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MMAWelding"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MMAWeldingSpecification"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MMAWeldingUnit"/>
+        <Class IRI="#ArcWeldingInstrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Melting"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeltingActionInArcWelding"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeltingActionInBrazing"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeltingActionInMIG"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeltingActionInMMA"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeltingActionInTIG"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeltingInBrazing"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeltingInMIGWelding"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeltingInMMAWelding"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeltingInTIGWelding"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OxyAcetylene"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlasmaArcWelding"/>
+        <Class IRI="#ArcWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProjectionWelding"/>
+        <Class IRI="#ResistanceWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResistanceWelding"/>
+        <Class IRI="#Welding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeamWelding"/>
+        <Class IRI="#ResistanceWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shielding"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShieldingAction"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShieldingByFlux"/>
+        <Class IRI="#Shielding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShieldingByFluxAction"/>
+        <Class IRI="#ShieldingAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShieldingByFluxProducedGasAndSlag"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShieldingByFluxProducedGasAndSlagAction"/>
+        <Class IRI="#ShieldingAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShieldingByInertGas"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShieldingByInertGasAction"/>
+        <Class IRI="#ShieldingAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SlagProducedByFlux"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soldering"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolderingIron"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/Machine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolderingSpecification"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolidStateWelding"/>
+        <Class IRI="#Welding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolidWireElectrode"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolidificationOfBaseMetalAction"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolidificationOfFillerAction"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Solidifying"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolidifyingBaseMetal"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolidifyingFiller"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpotWelding"/>
+        <Class IRI="#ResistanceWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubmergedArcWelding"/>
+        <Class IRI="#ArcWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TIGWelding"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TIGWeldingInstrument"/>
+        <Class IRI="#ArcWeldingInstrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TIGWeldingSpecification"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperatureGreaterThan450Celcius"/>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperatureLessThanEqual450Celcius"/>
+        <Class IRI="http://www.ontologyrepository.com/CommonCoreOntologies/Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermitWelding"/>
+        <Class IRI="#ThermochemicalWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermochemicalWelding"/>
+        <Class IRI="#Welding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TungstenElectrode"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UltrasonicWelding"/>
+        <Class IRI="#SolidStateWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeldedAssembly"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialArtifact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeldedJoint"/>
+        <Class IRI="#Joint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Welding"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Welding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPrimaryMethod"/>
+            <Class IRI="#Deforming"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Welding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPrimaryMethod"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Deforming"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000167"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialComponent"/>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/componentPartOf"/>
+                            <Class IRI="https://www.industrialontologies.org/ontology/core/Core/Assembly"/>
+                        </ObjectSomeValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeldingInstrument"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/Machine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeldingSpecification"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ManufacturingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/hasInput"/>
+            <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialComponent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/hasSpecifiedOutput"/>
+            <ObjectIntersectionOf>
+                <Class IRI="https://www.industrialontologies.org/ontology/core/Core/Assembly"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/hasComponentPart"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialComponent"/>
+                        <ObjectSomeValuesFrom>
+                            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/isInputOf"/>
+                            <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+                        </ObjectSomeValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ManufacturingProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000057"/>
+            <ObjectIntersectionOf>
+                <ObjectUnionOf>
+                    <Class IRI="https://www.industrialontologies.org/ontology/core/Core/Machine"/>
+                    <Class IRI="https://www.industrialontologies.org/ontology/core/Core/Person"/>
+                </ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000101"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+                        <ObjectComplementOf>
+                            <Class IRI="https://www.industrialontologies.org/ontology/core/Core/CommercialServiceAgreement"/>
+                        </ObjectComplementOf>
+                    </ObjectIntersectionOf>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <Class IRI="https://www.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ObjectiveSpecification"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+                <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ArcWelding"/>
+        <Class IRI="#ResistanceWelding"/>
+        <Class IRI="#SolidStateWelding"/>
+        <Class IRI="#ThermochemicalWelding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ColdWelding"/>
+        <Class IRI="#DiffusionBonding"/>
+        <Class IRI="#ExplosiveWelding"/>
+        <Class IRI="#FrictionWelding"/>
+        <Class IRI="#UltrasonicWelding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElectroSlagWelding"/>
+        <Class IRI="#FlashWelding"/>
+        <Class IRI="#ProjectionWelding"/>
+        <Class IRI="#SeamWelding"/>
+        <Class IRI="#SpotWelding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FluxedCoreArcWelding"/>
+        <Class IRI="#MIGWelding"/>
+        <Class IRI="#MMAWelding"/>
+        <Class IRI="#PlasmaArcWelding"/>
+        <Class IRI="#SubmergedArcWelding"/>
+        <Class IRI="#TIGWelding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GasWelding"/>
+        <Class IRI="#ThermitWelding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Joint"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/Assembly"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Melting"/>
+        <Class IRI="#Solidifying"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAgentAsParticipant"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000057"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasInstrumentAsParticipant"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000057"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPatientAsParticipant"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000057"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPrimaryBrazingMethod"/>
+        <ObjectProperty IRI="#hasPrimaryMethod"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPrimaryMethod"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000117"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPrimaryMethodEnvironment"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPrimarySolderingMethod"/>
+        <ObjectProperty IRI="#hasPrimaryMethod"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPrimaryWeldingMethod"/>
+        <ObjectProperty IRI="#hasPrimaryMethod"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#participatesAsAgent"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000056"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#participatesAsInstrument"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000056"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#participatesAsPatient"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000056"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAgentAsParticipant"/>
+        <ObjectProperty IRI="#participatesAsAgent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasInstrumentAsParticipant"/>
+        <ObjectProperty IRI="#participatesAsInstrument"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPatientAsParticipant"/>
+        <ObjectProperty IRI="#participatesAsPatient"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrimaryWeldingMethod"/>
+        <Class IRI="#Welding"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrimarySolderingMethod"/>
+        <Class IRI="#Heating"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrimaryWeldingMethod"/>
+        <Class IRI="#Heating"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#hasPrimaryMethod"/>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000183"/>
+        </ObjectPropertyChain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WeldedJoint</IRI>
+        <Literal>Joint Created By Welding</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://www.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition"/>
+        <IRI>#WeldedJoint</IRI>
+        <Literal>WeldedJoint(j) ↔ ∃a,m,x hasConnector(a, j) ∧hasComponentPart(a,x) ∧ partOf(m,j) ∧ partOf(m,x)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://www.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition"/>
+        <IRI>#WeldedJoint</IRI>
+        <Literal>Joint created by weld is a type of joint which has all the material either part of the base metal, that belongs to one of the component of the assembly, or part of filler metal.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

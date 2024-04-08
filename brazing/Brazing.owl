@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/brazing"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/brazing">
+    <Prefix name="" IRI="http://www.semanticweb.org/arkop/ontologies/2022/5/untitled-ontology-136#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.semanticweb.org/welding</Import>
+    <Import>https://www.industrialontologies.org/ontology/core/Core/</Import>
+    <Declaration>
+        <Class IRI="#BrazingNozzle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BrazingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Combusting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FillerMetal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flux"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasBrazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasBrazingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingActionInGasBrazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingInGasBrazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeltingActionInBrazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeltingInBrazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OxyAcetylene"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShieldingByFluxManual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolidificationOfFillerAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolidifyingFiller"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#BrazingSpecification"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                <Class IRI="http://www.semanticweb.org/welding#ShieldingAction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <Class IRI="#MeltingActionInBrazing"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <Class IRI="#SolidificationOfFillerAction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <Class IRI="http://www.semanticweb.org/welding#Heating-Melting-Solidifying-Action"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GasBrazing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#GasBrazingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GasBrazingSpecification"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                <Class IRI="#ShieldingByFluxManual"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <Class IRI="#HeatingActionInGasBrazing"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <Class IRI="#MeltingActionInBrazing"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <Class IRI="#SolidificationOfFillerAction"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HeatingActionInGasBrazing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#HeatingInGasBrazing"/>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                    <ObjectIntersectionOf>
+                        <Class IRI="#MeltingInBrazing"/>
+                        <ObjectAllValuesFrom>
+                            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                            <Class IRI="#SolidifyingFiller"/>
+                        </ObjectAllValuesFrom>
+                    </ObjectIntersectionOf>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HeatingInGasBrazing"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.semanticweb.org/welding#Heating"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <ObjectIntersectionOf>
+                    <Class IRI="#Combusting"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://www.semanticweb.org/welding#hasPatientAsParticipant"/>
+                        <Class IRI="#FillerMetal"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="http://www.semanticweb.org/welding#hasPatientAsParticipant"/>
+                        <Class IRI="#OxyAcetylene"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectAllValuesFrom>
+                        <ObjectProperty IRI="http://www.semanticweb.org/welding#hasInstrumentAsParticipant"/>
+                        <Class IRI="#BrazingNozzle"/>
+                    </ObjectAllValuesFrom>
+                </ObjectIntersectionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MeltingActionInBrazing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#MeltingInBrazing"/>
+                <ObjectAllValuesFrom>
+                    <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                    <Class IRI="#SolidifyingFiller"/>
+                </ObjectAllValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MeltingInBrazing"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.semanticweb.org/welding#Melting"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="http://www.semanticweb.org/welding#hasPatientAsParticipant"/>
+                <Class IRI="#FillerMetal"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ShieldingByFluxManual"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.semanticweb.org/welding#ShieldingAction"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.semanticweb.org/welding#hasAgentAsParticipant"/>
+                <Class IRI="#Flux"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SolidificationOfFillerAction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribes"/>
+            <Class IRI="#SolidifyingFiller"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SolidifyingFiller"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/welding#hasPatientAsParticipant"/>
+            <Class IRI="#FillerMetal"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/welding#Brazing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/hasSpecifiedOutput"/>
+            <ObjectIntersectionOf>
+                <Class IRI="https://www.industrialontologies.org/ontology/core/Core/Assembly"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="http://www.semanticweb.org/welding#hasConnector"/>
+                    <Class IRI="#BrazedJoint"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#BrazedJoint"/>
+        <Class IRI="http://www.semanticweb.org/welding#Joint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrazingNozzle"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/Machine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrazingSpecification"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Combusting"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FillerMetal"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flux"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/MaterialResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasBrazing"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasBrazingSpecification"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingActionInGasBrazing"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingInGasBrazing"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeltingActionInBrazing"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeltingInBrazing"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OxyAcetylene"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShieldingByFluxManual"/>
+        <Class IRI="http://www.semanticweb.org/welding#ShieldingAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolidificationOfFillerAction"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolidifyingFiller"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/welding#Brazing"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
+    </SubClassOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

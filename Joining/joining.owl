@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/joining"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/joining">
+    <Prefix name="" IRI="http://www.semanticweb.org/joining"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://purl.industrialontologies.org/ontology/core/20220506/Core/</Import>
+    <Declaration>
+        <Class IRI="#JoiningProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Joint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MechanicalAssembly"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsConnectorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAgentAsParticipant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasConnector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInstrumentAsParticipant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPatientAsParticipant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participatesAsAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participatesAsInstrument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participatesAsPatient"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#JoiningProcess"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://purl.industrialontologies.org/ontology/core/Core/ManufacturingProcess"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="https://purl.industrialontologies.org/ontology/core/Core/hasSpecifiedOutput"/>
+                <Class IRI="#Joint"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Joint"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#IsConnectorOf"/>
+                <Class IRI="#MechanicalAssembly"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#IsConnectorOf"/>
+                <Class IRI="#MechanicalAssembly"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MechanicalAssembly"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasConnector"/>
+            <Class IRI="#Joint"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Joint"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000024"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MechanicalAssembly"/>
+        <Class IRI="https://purl.industrialontologies.org/ontology/core/Core/Assembly"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsConnectorOf"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000137"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAgentAsParticipant"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000167"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasConnector"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000111"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasInstrumentAsParticipant"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000167"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPatientAsParticipant"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000167"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#participatesAsAgent"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000166"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#participatesAsInstrument"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000166"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#participatesAsPatient"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000166"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#IsConnectorOf"/>
+        <ObjectProperty IRI="#hasConnector"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasConnector"/>
+        <Class IRI="https://purl.industrialontologies.org/ontology/core/Core/Assembly"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasConnector"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000024"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition"/>
+        <IRI>#JoiningProcess</IRI>
+        <Literal>: JoiningProcess(p)↔PlannedProcess(p)∧∀j (hasSpecifiedOutput(p,j)→Joint(j))</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition"/>
+        <IRI>#Joint</IRI>
+        <Literal>Joint(j)↔FiatObjectPart(j)∧∃a MechanicalAssembly(a)∧hasConnector(a,b)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition"/>
+        <IRI>#MechanicalAssembly</IRI>
+        <Literal>MechanicalAssembly(a)→Assembly(a)∧∃j Joint(j)∧haConenctor(j,a)∧∀p (hasComponentPart(a,p)→(p≠j))</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

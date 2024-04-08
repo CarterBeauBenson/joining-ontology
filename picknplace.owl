@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/arkop/picknplace#"
+     xml:base="http://www.semanticweb.org/arkop/picknplace"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:AnnotationVocabulary="https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/arkop/picknplace">
+        <owl:imports rdf:resource="https://purl.industrialontologies.org/ontology/core/20220506/Core/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/arkop/picknplace#Box -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arkop/picknplace#Box">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arkop/picknplace#Moving -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arkop/picknplace#Moving">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arkop/picknplace#MovingActionSpecification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arkop/picknplace#MovingActionSpecification">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/prescribes"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/arkop/picknplace#Moving"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arkop/picknplace#Placing"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arkop/picknplace#Picking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arkop/picknplace#Picking">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arkop/picknplace#PickingActionSpecification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arkop/picknplace#PickingActionSpecification">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/prescribes"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/arkop/picknplace#Picking"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/arkop/picknplace#Moving"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arkop/picknplace#Placing"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arkop/picknplace#PicknPlacePlanSpecification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arkop/picknplace#PicknPlacePlanSpecification">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/prescribes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arkop/picknplace#PlannedPicknPlaceProcess"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arkop/picknplace#PicknPlacePlannedSpecificationAlt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arkop/picknplace#PicknPlacePlannedSpecificationAlt">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arkop/picknplace#MovingActionSpecification"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arkop/picknplace#PickingActionSpecification"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arkop/picknplace#PlacingActionSpecification"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arkop/picknplace#Placing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arkop/picknplace#Placing">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arkop/picknplace#PlacingActionSpecification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arkop/picknplace#PlacingActionSpecification">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/prescribes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arkop/picknplace#Placing"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/ActionSpecification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arkop/picknplace#PlannedMovingProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arkop/picknplace#PlannedMovingProcess">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arkop/picknplace#PlannedPlacingProcess"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arkop/picknplace#PlannedPickingProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arkop/picknplace#PlannedPickingProcess">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arkop/picknplace#PlannedMovingProcess"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arkop/picknplace#PlannedPicknPlaceProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arkop/picknplace#PlannedPicknPlaceProcess">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arkop/picknplace#PlannedMovingProcess"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arkop/picknplace#PlannedPickingProcess"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arkop/picknplace#PlannedPlacingProcess"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000167"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arkop/picknplace#Box"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000167"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arkop/picknplace#Robot"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arkop/picknplace#PlannedPlacingProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arkop/picknplace#PlannedPlacingProcess">
+        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arkop/picknplace#Robot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arkop/picknplace#Robot">
+        <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/Machine"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,1732 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/joining"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/joining">
+    <Prefix name="" IRI="http://www.semanticweb.org/joining"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+        <Literal>Arkopaul Sarkar</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal>An ontology for joining process</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdhesiveBonding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdhesiveBondingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnaerobicBonding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnaerobicBondingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnchorBoltFastening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnchorBoltFasteningSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArcWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArcWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlindRiveting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlindRivetingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bonding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BondingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BrazingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColdWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColdWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crimping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrimpingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CyanoacrylateBonding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CyanoacrylateBondingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiffusionBondingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiffusionBrazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiffusionBrazingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DipBrazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DipBrazingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DipSoldering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DipSolderingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectroSlagWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectroSlagWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmulsionBonding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmulsionBondingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EpoxyBonding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EpoxyBondingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExplosiveWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExplosiveWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fastening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FasteningSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fitting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FittingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flanging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlangingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlashWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlashWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FluxedCoreArcWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FluxedCoreArcWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FrictionWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FrictionWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FurnaceSoldering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FurnaceSolderingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FusionWeldingProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FusionWeldingProcessSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasBrazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasBrazingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasSoldering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasSolderingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingByBurningGas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingByFurnace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingByInduction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingByInfrared"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatingByResistance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotMelting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotMeltingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InductionBrazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InductionBrazingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InductionSoldering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InductionSolderingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InfraredBrazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InfraredBrazingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InfraredSoldering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InfraredSolderingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IronSoldering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IronSolderingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JoiningProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MIGWeldingProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MIGWeldingProcessSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MMAWeldingProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MMAWeldingProcessSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MagneticFastening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MagneticFasteningSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nailing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NailingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhenolicBonding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhenolicBondingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pinning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PinningSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlasmaArcWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlasmaArcWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PloimideBonding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PloimideBondingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PolyurethaneBonding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PolyurethaneBondingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PressFitting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PressFittingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProjectionWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProjectionWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResistanceBrazing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResistanceBrazingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResistanceSoldering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResistanceSolderingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResistanceWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResistanceWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Riveting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RivetingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeamWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeamWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seaming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeamingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShrinkExpansionFitting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShrinkExpansionFittingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SnapFitting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SnapFittingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Soldering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolderingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolidStateWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolidStateWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpotWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpotWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StakingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stapling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StaplingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stitching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StitchingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubmergedArcWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubmergedArcWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TIGWeldingProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TIGWeldingProcessSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TapeBonding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TapeBondingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermitWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermitWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermochemicalWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermochemicalWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UltrasonicWelding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UltrasonicWeldingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaveSoldering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaveSolderingSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeldingProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeldingProcessSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/CommercialServiceAgreement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000117"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrimaryBrazingMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrimarySolderingMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrimaryWeldingMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AdhesiveBonding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#AdhesiveBondingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AnaerobicBonding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#AnaerobicBondingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AnchorBoltFastening"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#AnchorBoltFasteningSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ArcWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#ArcWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#BlindRiveting"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#BlindRivetingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Bonding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#BondingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Brazing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPrimaryBrazingMethod"/>
+            <Class IRI="#Heating"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ColdWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#ColdWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Crimping"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#CrimpingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CyanoacrylateBonding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#CyanoacrylateBondingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DiffusionBrazing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#DiffusionBrazingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DipBrazing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#DipBrazingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DipSoldering"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#DipSolderingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ElectroSlagWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#ElectroSlagWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EmulsionBonding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#EmulsionBondingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EpoxyBonding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#EpoxyBondingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ExplosiveWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#ExplosiveWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Fastening"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#FasteningSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Fitting"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#FittingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Flanging"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#FlangingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FlashWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#FlashWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FluxedCoreArcWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#FluxedCoreArcWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FrictionWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#FrictionWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FurnaceSoldering"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#FurnaceSolderingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FusionWeldingProcess"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#FusionWeldingProcessSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GasBrazing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#GasBrazingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GasSoldering"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#GasSolderingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GasWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#GasWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HotMelting"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#HotMeltingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InductionBrazing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPrimaryBrazingMethod"/>
+            <Class IRI="#HeatingByInduction"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InductionSoldering"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#InductionSolderingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InfraredBrazing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#InfraredBrazingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InfraredSoldering"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#InfraredSolderingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#IronSoldering"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#IronSolderingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MIGWeldingProcess"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#MIGWeldingProcessSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MMAWeldingProcess"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#MMAWeldingProcessSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MagneticFastening"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#MagneticFasteningSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Nailing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#NailingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PhenolicBonding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#PhenolicBondingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Pinning"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#PinningSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PlasmaArcWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#PlasmaArcWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PloimideBonding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#PloimideBondingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PolyurethaneBonding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#PolyurethaneBondingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PressFitting"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#PressFittingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ProjectionWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#ProjectionWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ResistanceBrazing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPrimaryBrazingMethod"/>
+            <Class IRI="#HeatingByResistance"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ResistanceSoldering"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#ResistanceSolderingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ResistanceWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#ResistanceWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Riveting"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#RivetingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SeamWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#SeamWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Seaming"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#SeamingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ShrinkExpansionFitting"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#ShrinkExpansionFittingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SnapFitting"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#SnapFittingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Soldering"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#SolderingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SolidStateWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#SolidStateWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SpotWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#SpotWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Staking"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#StakingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Stapling"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#StaplingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Stitching"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#StitchingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SubmergedArcWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#SubmergedArcWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TIGWeldingProcess"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#TIGWeldingProcessSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TapeBonding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#TapeBondingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ThermitWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#ThermitWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ThermochemicalWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#ThermochemicalWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UltrasonicWelding"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#UltrasonicWeldingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WaveSoldering"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#WaveSolderingSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WeldingProcess"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="https://www.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+            <Class IRI="#FusionWeldingProcessSpecification"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AdhesiveBonding"/>
+        <Class IRI="#Bonding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdhesiveBondingSpecification"/>
+        <Class IRI="#BondingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnaerobicBonding"/>
+        <Class IRI="#Bonding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnaerobicBondingSpecification"/>
+        <Class IRI="#BondingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnchorBoltFastening"/>
+        <Class IRI="#Fastening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnchorBoltFasteningSpecification"/>
+        <Class IRI="#FasteningSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArcWelding"/>
+        <Class IRI="#FusionWeldingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArcWeldingSpecification"/>
+        <Class IRI="#FusionWeldingProcessSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlindRiveting"/>
+        <Class IRI="#Fitting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlindRivetingSpecification"/>
+        <Class IRI="#FittingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bonding"/>
+        <Class IRI="#JoiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BondingSpecification"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brazing"/>
+        <Class IRI="#JoiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrazingSpecification"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColdWelding"/>
+        <Class IRI="#SolidStateWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColdWelding"/>
+        <Class IRI="#WeldingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColdWeldingSpecification"/>
+        <Class IRI="#SolidStateWeldingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColdWeldingSpecification"/>
+        <Class IRI="#WeldingProcessSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crimping"/>
+        <Class IRI="#Fastening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrimpingSpecification"/>
+        <Class IRI="#FasteningSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CyanoacrylateBonding"/>
+        <Class IRI="#Bonding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CyanoacrylateBondingSpecification"/>
+        <Class IRI="#BondingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiffusionBondingSpecification"/>
+        <Class IRI="#SolidStateWeldingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiffusionBrazing"/>
+        <Class IRI="#Brazing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiffusionBrazingSpecification"/>
+        <Class IRI="#BrazingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DipBrazing"/>
+        <Class IRI="#Brazing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DipBrazingSpecification"/>
+        <Class IRI="#BrazingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DipSoldering"/>
+        <Class IRI="#Soldering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DipSolderingSpecification"/>
+        <Class IRI="#SolderingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectroSlagWelding"/>
+        <Class IRI="#ResistanceWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectroSlagWeldingSpecification"/>
+        <Class IRI="#ResistanceWeldingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmulsionBonding"/>
+        <Class IRI="#Bonding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmulsionBondingSpecification"/>
+        <Class IRI="#BondingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EpoxyBonding"/>
+        <Class IRI="#Bonding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EpoxyBondingSpecification"/>
+        <Class IRI="#BondingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExplosiveWelding"/>
+        <Class IRI="#SolidStateWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExplosiveWeldingSpecification"/>
+        <Class IRI="#SolidStateWeldingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fastening"/>
+        <Class IRI="#JoiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FasteningSpecification"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fitting"/>
+        <Class IRI="#JoiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FittingSpecification"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flanging"/>
+        <Class IRI="#Fastening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlangingSpecification"/>
+        <Class IRI="#FasteningSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlashWelding"/>
+        <Class IRI="#ResistanceWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlashWeldingSpecification"/>
+        <Class IRI="#ResistanceWeldingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FluxedCoreArcWelding"/>
+        <Class IRI="#ArcWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FluxedCoreArcWeldingSpecification"/>
+        <Class IRI="#ArcWeldingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FrictionWelding"/>
+        <Class IRI="#SolidStateWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FrictionWeldingSpecification"/>
+        <Class IRI="#SolidStateWeldingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FurnaceSoldering"/>
+        <Class IRI="#Soldering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FurnaceSolderingSpecification"/>
+        <Class IRI="#SolderingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FusionWeldingProcess"/>
+        <Class IRI="#WeldingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FusionWeldingProcessSpecification"/>
+        <Class IRI="#WeldingProcessSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasBrazing"/>
+        <Class IRI="#Brazing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasBrazingSpecification"/>
+        <Class IRI="#BrazingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasSoldering"/>
+        <Class IRI="#Soldering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasSolderingSpecification"/>
+        <Class IRI="#SolderingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasWelding"/>
+        <Class IRI="#ThermochemicalWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasWeldingSpecification"/>
+        <Class IRI="#ThermochemicalWeldingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heating"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingByBurningGas"/>
+        <Class IRI="#Heating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingByFurnace"/>
+        <Class IRI="#Heating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingByInduction"/>
+        <Class IRI="#Heating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingByInfrared"/>
+        <Class IRI="#Heating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatingByResistance"/>
+        <Class IRI="#Heating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotMelting"/>
+        <Class IRI="#Bonding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotMeltingSpecification"/>
+        <Class IRI="#BondingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InductionBrazing"/>
+        <Class IRI="#Brazing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InductionBrazingSpecification"/>
+        <Class IRI="#BrazingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InductionSoldering"/>
+        <Class IRI="#Soldering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InductionSolderingSpecification"/>
+        <Class IRI="#SolderingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InfraredBrazing"/>
+        <Class IRI="#Brazing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InfraredBrazingSpecification"/>
+        <Class IRI="#BrazingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InfraredSoldering"/>
+        <Class IRI="#Soldering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InfraredSolderingSpecification"/>
+        <Class IRI="#SolderingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IronSoldering"/>
+        <Class IRI="#Soldering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IronSolderingSpecification"/>
+        <Class IRI="#SolderingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JoiningProcess"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MIGWeldingProcess"/>
+        <Class IRI="#ArcWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MIGWeldingProcessSpecification"/>
+        <Class IRI="#ArcWeldingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MMAWeldingProcess"/>
+        <Class IRI="#ArcWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MMAWeldingProcessSpecification"/>
+        <Class IRI="#ArcWeldingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MagneticFastening"/>
+        <Class IRI="#Fastening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MagneticFasteningSpecification"/>
+        <Class IRI="#FasteningSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nailing"/>
+        <Class IRI="#Fastening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NailingSpecification"/>
+        <Class IRI="#FasteningSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhenolicBonding"/>
+        <Class IRI="#Bonding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhenolicBondingSpecification"/>
+        <Class IRI="#BondingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pinning"/>
+        <Class IRI="#Fastening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PinningSpecification"/>
+        <Class IRI="#FasteningSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlasmaArcWelding"/>
+        <Class IRI="#ArcWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlasmaArcWeldingSpecification"/>
+        <Class IRI="#ArcWeldingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PloimideBonding"/>
+        <Class IRI="#Bonding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PloimideBondingSpecification"/>
+        <Class IRI="#BondingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolyurethaneBonding"/>
+        <Class IRI="#Bonding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolyurethaneBondingSpecification"/>
+        <Class IRI="#BondingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PressFitting"/>
+        <Class IRI="#Fitting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PressFittingSpecification"/>
+        <Class IRI="#FittingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProjectionWelding"/>
+        <Class IRI="#ResistanceWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProjectionWeldingSpecification"/>
+        <Class IRI="#ResistanceWeldingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResistanceBrazing"/>
+        <Class IRI="#Brazing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResistanceBrazingSpecification"/>
+        <Class IRI="#BrazingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResistanceSoldering"/>
+        <Class IRI="#Soldering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResistanceSolderingSpecification"/>
+        <Class IRI="#SolderingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResistanceWelding"/>
+        <Class IRI="#FusionWeldingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResistanceWeldingSpecification"/>
+        <Class IRI="#FusionWeldingProcessSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Riveting"/>
+        <Class IRI="#Fastening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RivetingSpecification"/>
+        <Class IRI="#FasteningSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeamWelding"/>
+        <Class IRI="#ResistanceWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeamWeldingSpecification"/>
+        <Class IRI="#ResistanceWeldingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seaming"/>
+        <Class IRI="#Fastening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeamingSpecification"/>
+        <Class IRI="#FasteningSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShrinkExpansionFitting"/>
+        <Class IRI="#Fitting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShrinkExpansionFittingSpecification"/>
+        <Class IRI="#FittingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SnapFitting"/>
+        <Class IRI="#Fitting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SnapFittingSpecification"/>
+        <Class IRI="#FittingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soldering"/>
+        <Class IRI="#JoiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolderingSpecification"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolidStateWelding"/>
+        <Class IRI="#FusionWeldingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolidStateWeldingSpecification"/>
+        <Class IRI="#FusionWeldingProcessSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpotWelding"/>
+        <Class IRI="#ResistanceWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpotWeldingSpecification"/>
+        <Class IRI="#ResistanceWeldingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staking"/>
+        <Class IRI="#Fastening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StakingSpecification"/>
+        <Class IRI="#FasteningSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stapling"/>
+        <Class IRI="#Fastening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaplingSpecification"/>
+        <Class IRI="#FasteningSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stitching"/>
+        <Class IRI="#Fastening"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StitchingSpecification"/>
+        <Class IRI="#FasteningSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubmergedArcWelding"/>
+        <Class IRI="#ArcWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubmergedArcWeldingSpecification"/>
+        <Class IRI="#ArcWeldingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TIGWeldingProcess"/>
+        <Class IRI="#ArcWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TIGWeldingProcessSpecification"/>
+        <Class IRI="#ArcWeldingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TapeBonding"/>
+        <Class IRI="#Bonding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TapeBondingSpecification"/>
+        <Class IRI="#BondingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermitWelding"/>
+        <Class IRI="#ThermochemicalWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermitWeldingSpecification"/>
+        <Class IRI="#ThermochemicalWeldingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermochemicalWelding"/>
+        <Class IRI="#FusionWeldingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermochemicalWeldingSpecification"/>
+        <Class IRI="#FusionWeldingProcessSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UltrasonicWelding"/>
+        <Class IRI="#SolidStateWelding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UltrasonicWeldingSpecification"/>
+        <Class IRI="#SolidStateWeldingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaveSoldering"/>
+        <Class IRI="#Soldering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaveSolderingSpecification"/>
+        <Class IRI="#SolderingSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeldingProcess"/>
+        <Class IRI="#JoiningProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeldingProcessSpecification"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AdhesiveBonding"/>
+        <Class IRI="#AnaerobicBonding"/>
+        <Class IRI="#CyanoacrylateBonding"/>
+        <Class IRI="#EmulsionBonding"/>
+        <Class IRI="#EpoxyBonding"/>
+        <Class IRI="#HotMelting"/>
+        <Class IRI="#PhenolicBonding"/>
+        <Class IRI="#PloimideBonding"/>
+        <Class IRI="#PolyurethaneBonding"/>
+        <Class IRI="#TapeBonding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AdhesiveBondingSpecification"/>
+        <Class IRI="#AnaerobicBondingSpecification"/>
+        <Class IRI="#CyanoacrylateBondingSpecification"/>
+        <Class IRI="#EmulsionBondingSpecification"/>
+        <Class IRI="#EpoxyBondingSpecification"/>
+        <Class IRI="#HotMeltingSpecification"/>
+        <Class IRI="#PhenolicBondingSpecification"/>
+        <Class IRI="#PloimideBondingSpecification"/>
+        <Class IRI="#PolyurethaneBondingSpecification"/>
+        <Class IRI="#TapeBondingSpecification"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AnchorBoltFastening"/>
+        <Class IRI="#Crimping"/>
+        <Class IRI="#Flanging"/>
+        <Class IRI="#MagneticFastening"/>
+        <Class IRI="#Nailing"/>
+        <Class IRI="#Pinning"/>
+        <Class IRI="#Riveting"/>
+        <Class IRI="#Seaming"/>
+        <Class IRI="#Staking"/>
+        <Class IRI="#Stapling"/>
+        <Class IRI="#Stitching"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AnchorBoltFasteningSpecification"/>
+        <Class IRI="#CrimpingSpecification"/>
+        <Class IRI="#FlangingSpecification"/>
+        <Class IRI="#MagneticFasteningSpecification"/>
+        <Class IRI="#NailingSpecification"/>
+        <Class IRI="#PinningSpecification"/>
+        <Class IRI="#RivetingSpecification"/>
+        <Class IRI="#SeamingSpecification"/>
+        <Class IRI="#StakingSpecification"/>
+        <Class IRI="#StaplingSpecification"/>
+        <Class IRI="#StitchingSpecification"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ArcWelding"/>
+        <Class IRI="#ResistanceWelding"/>
+        <Class IRI="#SolidStateWelding"/>
+        <Class IRI="#ThermochemicalWelding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ArcWeldingSpecification"/>
+        <Class IRI="#ResistanceWeldingSpecification"/>
+        <Class IRI="#SolidStateWeldingSpecification"/>
+        <Class IRI="#ThermochemicalWeldingSpecification"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BlindRiveting"/>
+        <Class IRI="#PressFitting"/>
+        <Class IRI="#ShrinkExpansionFitting"/>
+        <Class IRI="#SnapFitting"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BlindRivetingSpecification"/>
+        <Class IRI="#PressFittingSpecification"/>
+        <Class IRI="#ShrinkExpansionFittingSpecification"/>
+        <Class IRI="#SnapFittingSpecification"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bonding"/>
+        <Class IRI="#BondingSpecification"/>
+        <Class IRI="#BrazingSpecification"/>
+        <Class IRI="#Fastening"/>
+        <Class IRI="#FasteningSpecification"/>
+        <Class IRI="#Fitting"/>
+        <Class IRI="#FittingSpecification"/>
+        <Class IRI="#Soldering"/>
+        <Class IRI="#SolderingSpecification"/>
+        <Class IRI="#WeldingProcess"/>
+        <Class IRI="#WeldingProcessSpecification"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ColdWeldingSpecification"/>
+        <Class IRI="#DiffusionBondingSpecification"/>
+        <Class IRI="#ExplosiveWeldingSpecification"/>
+        <Class IRI="#FrictionWeldingSpecification"/>
+        <Class IRI="#UltrasonicWeldingSpecification"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ColdWeldingSpecification"/>
+        <Class IRI="#FusionWeldingProcessSpecification"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DiffusionBrazingSpecification"/>
+        <Class IRI="#DipBrazingSpecification"/>
+        <Class IRI="#GasBrazingSpecification"/>
+        <Class IRI="#InductionBrazingSpecification"/>
+        <Class IRI="#InfraredBrazingSpecification"/>
+        <Class IRI="#ResistanceBrazingSpecification"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DipSoldering"/>
+        <Class IRI="#FurnaceSoldering"/>
+        <Class IRI="#GasSoldering"/>
+        <Class IRI="#InductionSoldering"/>
+        <Class IRI="#InfraredSoldering"/>
+        <Class IRI="#IronSoldering"/>
+        <Class IRI="#ResistanceSoldering"/>
+        <Class IRI="#WaveSoldering"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DipSolderingSpecification"/>
+        <Class IRI="#FurnaceSolderingSpecification"/>
+        <Class IRI="#GasSolderingSpecification"/>
+        <Class IRI="#InductionSolderingSpecification"/>
+        <Class IRI="#InfraredSolderingSpecification"/>
+        <Class IRI="#IronSolderingSpecification"/>
+        <Class IRI="#ResistanceSolderingSpecification"/>
+        <Class IRI="#WaveSolderingSpecification"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElectroSlagWelding"/>
+        <Class IRI="#FlashWelding"/>
+        <Class IRI="#ProjectionWelding"/>
+        <Class IRI="#SeamWelding"/>
+        <Class IRI="#SpotWelding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElectroSlagWeldingSpecification"/>
+        <Class IRI="#FlashWeldingSpecification"/>
+        <Class IRI="#ProjectionWeldingSpecification"/>
+        <Class IRI="#SeamWeldingSpecification"/>
+        <Class IRI="#SpotWeldingSpecification"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FluxedCoreArcWelding"/>
+        <Class IRI="#MIGWeldingProcess"/>
+        <Class IRI="#MMAWeldingProcess"/>
+        <Class IRI="#PlasmaArcWelding"/>
+        <Class IRI="#SubmergedArcWelding"/>
+        <Class IRI="#TIGWeldingProcess"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FluxedCoreArcWeldingSpecification"/>
+        <Class IRI="#MIGWeldingProcessSpecification"/>
+        <Class IRI="#MMAWeldingProcessSpecification"/>
+        <Class IRI="#PlasmaArcWeldingSpecification"/>
+        <Class IRI="#SubmergedArcWeldingSpecification"/>
+        <Class IRI="#TIGWeldingProcessSpecification"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GasWelding"/>
+        <Class IRI="#ThermitWelding"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GasWeldingSpecification"/>
+        <Class IRI="#ThermitWeldingSpecification"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HeatingByBurningGas"/>
+        <Class IRI="#HeatingByFurnace"/>
+        <Class IRI="#HeatingByInduction"/>
+        <Class IRI="#HeatingByInfrared"/>
+        <Class IRI="#HeatingByResistance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#JoiningProcess"/>
+        <Class IRI="https://www.industrialontologies.org/ontology/core/Core/CommercialServiceAgreement"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPrimaryBrazingMethod"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000117"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPrimarySolderingMethod"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000117"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPrimaryWeldingMethod"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000117"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrimarySolderingMethod"/>
+        <Class IRI="#Soldering"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrimaryWeldingMethod"/>
+        <Class IRI="#WeldingProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrimarySolderingMethod"/>
+        <Class IRI="#Heating"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrimaryWeldingMethod"/>
+        <Class IRI="#Heating"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="https://purl.industrialontologies.org/ontology/core/20220506/Core/" uri="file:/C:/Users/arkop/git/JoiningProcess/Joining/joining.owl"/>
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/joining" uri="file:/C:/Users/arkop/git/JoiningProcess/Joining/joining.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1674062063023" name="http://www.semanticweb.org/welding" uri="welding.owl"/>
+    </group>
+</catalog>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://www.industrialontologies.org/ontology/core/Core/" uri="file:/C:/Users/arkop/git/iofoundry/Core/Core-orig.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl" uri="file:/C:/Users/arkop/git/iofoundry/Core/imports/bfo-2020.owl"/>
+    <uri id="Imports Wizard Entry" name="https://www.industrialontologies.org/ontology/core/Core/" uri="file:/C:/Users/arkop/git/iofoundry/Core/Core-orig.rdf"/>
+    <uri id="Imports Wizard Entry" name="https://www.industrialontologies.org/ontology/core/Core/" uri="file:/C:/Users/arkop/git/iofoundry/Core/Core-orig.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl" uri="file:/C:/Users/arkop/git/iofoundry/Core/imports/bfo-2020.owl"/>
+    <uri id="Imports Wizard Entry" name="https://www.industrialontologies.org/ontology/core/Core/" uri="file:/C:/Users/arkop/git/iofoundry/Core/Core-orig.rdf"/>
+    <uri id="Imports Wizard Entry" name="https://www.industrialontologies.org/ontology/core/Core/" uri="file:/C:/Users/arkop/git/iofoundry/Core/Core-orig.rdf"/>
+    <uri id="Imports Wizard Entry" name="https://www.industrialontologies.org/ontology/core/Core/" uri="file:/C:/Users/arkop/git/iofoundry/Core/Core-orig.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/welding" uri="Weldingv3.owl"/>
+    <uri id="Imports Wizard Entry" name="https://purl.industrialontologies.org/ontology/core/20220506/Core/" uri="https://raw.githubusercontent.com/iofoundry/Core/main/Core.rdf"/>
+    <uri id="Imports Wizard Entry" name="https://www.industrialontologies.org/ontology/core/Core/" uri="file:/C:/Users/arkop/git/iofoundry/Core/Core-orig.rdf"/>
+    <uri id="Imports Wizard Entry" name="https://www.industrialontologies.org/ontology/core/Core/" uri="file:/C:/Users/arkop/git/iofoundry/Core/Core-orig.rdf"/>
+    <uri id="Imports Wizard Entry" name="https://www.industrialontologies.org/ontology/core/20210701/meta/AnnotationVocabulary/" uri="file:/C:/Users/arkop/git/iofoundry/Core/meta/AnnotationVocabulary.rdf"/>
+    <uri id="Imports Wizard Entry" name="https://www.industrialontologies.org/ontology/core/Core/" uri="file:/C:/Users/arkop/git/iofoundry/Core/Core-orig.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl" uri="imports/bfo-2020.owl"/>
+    <uri id="Imports Wizard Entry" name="https://www.industrialontologies.org/ontology/core/20210701/meta/AnnotationVocabulary/" uri="imports/AnnotationVocabulary.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1712553008042" name="http://purl.obolibrary.org/obo/" uri="imports/ro-imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1712553008042" name="http://purl.obolibrary.org/obo/bfo.owl" uri="imports/bfo-2020.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1712553008042" name="http://www.ontologyrepository.com/CommonCoreOntologies/" uri="imports/cco-imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1712553008042" name="http://www.semanticweb.org/arkop/picknplace" uri="picknplace.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1712553008042" name="http://www.semanticweb.org/brazing" uri="brazing/Brazing.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1712553008042" name="http://www.semanticweb.org/joining" uri="joining-explicit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1712553008042" name="duplicate:http://www.semanticweb.org/welding" uri="welding/Welding.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1712553008042" name="duplicate:http://www.semanticweb.org/welding" uri="welding/welding0.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1712553008042" name="duplicate:http://www.semanticweb.org/welding" uri="welding/Weldingv3.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1712553008042" name="duplicate:http://www.semanticweb.org/welding" uri="welding/Weldingv4.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1712553008042" name="duplicate:http://www.semanticweb.org/welding" uri="welding/Weldingv5.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1712553008042" name="https://www.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/" uri="imports/AnnotationVocabulary.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1712553008042" name="shadowed:http://www.semanticweb.org/joining" uri="Joining/joining.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1712553008042" name="shadowed:http://www.semanticweb.org/joining" uri="welding/Weldingv2.owl"/>
+    </group>
+</catalog>
