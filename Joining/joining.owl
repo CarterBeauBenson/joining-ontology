@@ -144,6 +144,28 @@
         <Literal>MechanicalAssembly(a)→Assembly(a)∧∃j Joint(j)∧haConenctor(j,a)∧∀p (hasComponentPart(a,p)→(p≠j))</Literal>
     </AnnotationAssertion>
 </Ontology>
+<!-- Classes Definitions -->
+<Class IRI="#JoiningProcess">
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A Joining Process is a Manufacturing Process that results exclusively in the creation of Joints.</Literal>
+    </Annotation>
+</Class>
+
+<Class IRI="#Joint">
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A Joint is a Fiat Object Part that functions to connect components within Mechanical Assemblies exclusively.</Literal>
+    </Annotation>
+</Class>
+
+<Class IRI="#MechanicalAssembly">
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A Mechanical Assembly is an Assembly that incorporates at least one Joint as a connecting component.</Literal>
+    </Annotation>
+</Class>
+
 
 
 
