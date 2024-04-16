@@ -145,7 +145,7 @@
         <IRI>#MechanicalAssembly</IRI>
         <Literal>MechanicalAssembly(a)→Assembly(a)∧∃j Joint(j)∧haConenctor(j,a)∧∀p (hasComponentPart(a,p)→(p≠j))</Literal>
     </AnnotationAssertion>
-</Ontology>
+
 <!-- Classes Definitions -->
 <Class IRI="#JoiningProcess">
     <Annotation>
