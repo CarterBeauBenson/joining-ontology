@@ -167,7 +167,7 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A Mechanical Assembly is an Assembly that incorporates at least one Joint as a connecting component.</Literal>
     </Annotation>
 </Class>
-
+</Ontology>
 
 
 
