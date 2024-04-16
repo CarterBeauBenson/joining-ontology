@@ -278,7 +278,7 @@
         <Class IRI="http://www.semanticweb.org/welding#Brazing"/>
         <Class IRI="https://www.industrialontologies.org/ontology/core/Core/AssemblyProcess"/>
     </SubClassOf>
-</Ontology>
+
 <!-- Gas Brazing -->
 <Class IRI="#GasBrazing">
     <Annotation>
