@@ -16,6 +16,9 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>https://purl.industrialontologies.org/ontology/core/20220506/Core/</Import>
     <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#JoiningProcess"/>
     </Declaration>
     <Declaration>
