@@ -1999,6 +1999,12 @@
         Welding is an assembly process that involves high heat to melt joining materials along with a filler to create a strong, permanent bond and is defined by a Welding Specification.
     </Literal>
 </AnnotationAssertion>
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <IRI>#WeldedJoint</IRI>
+    <Literal datatype="http://www.w3.org/2001/XMLSchema#string">A Welded Joint is a joint that exists if there is an assembly 'a' and materials 'm' and 'x' such that 'a' has a connector to 'j', 'a' includes 'x' as a component part, and both 'm' is a part of 'j' and 'm' is a part of 'x'.</Literal>
+</AnnotationAssertion>
+
 </Ontology>
 
 
