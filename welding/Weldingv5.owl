@@ -1888,104 +1888,132 @@
         <IRI>#WeldedJoint</IRI>
         <Literal>Joint created by weld is a type of joint which has all the material either part of the base metal, that belongs to one of the component of the assembly, or part of filler metal.</Literal>
     </AnnotationAssertion>
-<!-- Classes Definitions -->
-<Class IRI="#ArcWelding">
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Arc Welding is prescribed by an Arc Welding Specification.</Literal>
-    </Annotation>
-</Class>
+<!-- Arc Welding -->
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    <IRI>#ArcWelding</IRI>
+    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
+        Arc Welding is prescribed by an Arc Welding Specification.
+    </Literal>
+</AnnotationAssertion>
 
-<Class IRI="#ArcWeldingSpecification">
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Arc Welding Specification entails a Deformating Action that includes Shielding Action, Heating Action in Arc Welding, Melting Action in Arc Welding, and Solidification of Base Metal Action.</Literal>
-    </Annotation>
-</Class>
+<!-- Arc Welding Specification -->
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    <IRI>#ArcWeldingSpecification</IRI>
+    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
+        Arc Welding Specification entails a Deformating Action that includes Shielding Action, Heating Action in Arc Welding, Melting Action in Arc Welding, and Solidification of Base Metal Action.
+    </Literal>
+</AnnotationAssertion>
 
-<Class IRI="#Brazing">
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Brazing is a process that results in an assembly which necessarily includes a Brazed Joint as a connector and is prescribed by a Brazing Specification.</Literal>
-    </Annotation>
-</Class>
+<!-- Brazing -->
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    <IRI>#Brazing</IRI>
+    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
+        Brazing is a process that results in an assembly which necessarily includes a Brazed Joint as a connector and is prescribed by a Brazing Specification.
+    </Literal>
+</AnnotationAssertion>
 
-<Class IRI="#BrazingSpecification">
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Brazing Specification includes Shielding Action, Heating Action in Brazing, Melting Action in Brazing, and Solidification of Filler Action.</Literal>
-    </Annotation>
-</Class>
+<!-- Brazing Specification -->
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    <IRI>#BrazingSpecification</IRI>
+    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
+        Brazing Specification includes Shielding Action, Heating Action in Brazing, Melting Action in Brazing, and Solidification of Filler Action.
+    </Literal>
+</AnnotationAssertion>
 
-<Class IRI="#GasBrazing">
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Gas Brazing is prescribed by a Gas Brazing Specification.</Literal>
-    </Annotation>
-</Class>
+<!-- Gas Brazing -->
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    <IRI>#GasBrazing</IRI>
+    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
+        Gas Brazing is prescribed by a Gas Brazing Specification.
+    </Literal>
+</AnnotationAssertion>
 
-<Class IRI="#GasBrazingSpecification">
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Gas Brazing Specification includes Shielding by Flux Action, Heating Action in Gas Brazing, Melting Action in Brazing, and Solidification of Filler Action.</Literal>
-    </Annotation>
-</Class>
+<!-- Gas Brazing Specification -->
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    <IRI>#GasBrazingSpecification</IRI>
+    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
+        Gas Brazing Specification includes Shielding by Flux Action, Heating Action in Gas Brazing, Melting Action in Brazing, and Solidification of Filler Action.
+    </Literal>
+</AnnotationAssertion>
 
-<Class IRI="#HeatingActionInArcWelding">
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Heating Action in Arc Welding prescribes a heating process that results in the melting and subsequent solidifying of the base metal.</Literal>
-    </Annotation>
-</Class>
+<!-- Heating Action in Arc Welding -->
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    <IRI>#HeatingActionInArcWelding</IRI>
+    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
+        Heating Action in Arc Welding prescribes a heating process that results in the melting and subsequent solidifying of the base metal.
+    </Literal>
+</AnnotationAssertion>
 
-<Class IRI="#MIGWelding">
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">MIG Welding is prescribed by a MIG Welding Specification.</Literal>
-    </Annotation>
-</Class>
+<!-- MIG Welding -->
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    <IRI>#MIGWelding</IRI>
+    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
+        MIG Welding is prescribed by a MIG Welding Specification.
+    </Literal>
+</AnnotationAssertion>
 
-<Class IRI="#MIGWeldingSpecification">
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">MIG Welding Specification entails a Deformating Action that includes Shielding by Inert Gas Action, Heating Action in MIG, Melting Action in MIG, and Solidification of Base Metal Action.</Literal>
-    </Annotation>
-</Class>
+<!-- MIG Welding Specification -->
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    <IRI>#MIGWeldingSpecification</IRI>
+    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
+        MIG Welding Specification entails a Deformating Action that includes Shielding by Inert Gas Action, Heating Action in MIG, Melting Action in MIG, and Solidification of Base Metal Action.
+    </Literal>
+</AnnotationAssertion>
 
-<Class IRI="#Soldering">
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Soldering is a process prescribed by a Soldering Specification.</Literal>
-    </Annotation>
-</Class>
+<!-- Soldering -->
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    <IRI>#Soldering</IRI>
+    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
+        Soldering is a process prescribed by a Soldering Specification.
+    </Literal>
+</AnnotationAssertion>
 
-<Class IRI="#SolderingSpecification">
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Soldering Specification involves specific procedures and materials like solder to create a permanent bond between parts, typically electronic components.</Literal>
-    </Annotation>
-</Class>
+<!-- Soldering Specification -->
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    <IRI>#SolderingSpecification</IRI>
+    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
+        Soldering Specification involves specific procedures and materials like solder to create a permanent bond between parts, typically electronic components.
+    </Literal>
+</AnnotationAssertion>
 
-<Class IRI="#TIGWelding">
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">TIG Welding is prescribed by a TIG Welding Specification.</Literal>
-    </Annotation>
-</Class>
+<!-- TIG Welding -->
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    <IRI>#TIGWelding</IRI>
+    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
+        TIG Welding is prescribed by a TIG Welding Specification.
+    </Literal>
+</AnnotationAssertion>
 
-<Class IRI="#TIGWeldingSpecification">
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">TIG Welding Specification entails a Deformating Action that includes Shielding by Inert Gas Action, Heating Action in TIG, Melting Action in TIG, and Solidification of Base Metal Action.</Literal>
-    </Annotation>
-</Class>
+<!-- TIG Welding Specification -->
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    <IRI>#TIGWeldingSpecification</IRI>
+    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
+        TIG Welding Specification entails a Deformating Action that includes Shielding by Inert Gas Action, Heating Action in TIG, Melting Action in TIG, and Solidification of Base Metal Action.
+    </Literal>
+</AnnotationAssertion>
 
-<Class IRI="#Welding">
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Welding is a process that results in a welded assembly, typically involving the use of high heat to melt the joining materials along with a filler material, to create a strong, permanent bond.</Literal>
-    </Annotation>
-</Class>
+<!-- Welding -->
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    <IRI>#Welding</IRI>
+    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
+        Welding is a process that results in a welded assembly, typically involving the use of high heat to melt the joining materials along with a filler material, to create a strong, permanent bond.
+    </Literal>
+</AnnotationAssertion>
+
 
 </Ontology>
 
