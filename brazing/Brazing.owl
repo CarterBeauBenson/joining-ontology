@@ -284,7 +284,7 @@
     <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
     <IRI>#GasBrazing</IRI>
     <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
-        Gas Brazing is a Brazing Process that is exclusively prescribed by a Gas Brazing Specification.
+        Gas Brazing is a brazing process that involves using gas to create joints and is exclusively prescribed by a Gas Brazing Specification.
     </Literal>
 </AnnotationAssertion>
 
@@ -293,7 +293,7 @@
     <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
     <IRI>#GasBrazingSpecification</IRI>
     <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
-        Gas Brazing Specification is a specification that requires Shielding by Flux Manual, Heating Action in Gas Brazing, Melting Action in Brazing, and Solidification of Filler Action.
+        Gas Brazing Specification is a specification that mandates the use of flux for shielding, gas for heating, brazing for melting actions, and actions for filler solidification.
     </Literal>
 </AnnotationAssertion>
 
@@ -302,7 +302,7 @@
     <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
     <IRI>#HeatingActionInGasBrazing</IRI>
     <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
-        Heating Action in Gas Brazing is an action that prescribes Heating in Gas Brazing, involving Combusting that affects Melting in Brazing and ultimately results in Solidifying Filler.
+        Heating Action in Gas Brazing is an action that involves combusting gas to heat materials in a way that affects their melting and subsequent solidification during brazing.
     </Literal>
 </AnnotationAssertion>
 
@@ -311,7 +311,7 @@
     <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
     <IRI>#MeltingActionInBrazing</IRI>
     <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
-        Melting Action in Brazing is an action that involves the process of Melting in Brazing which facilitates the Solidification of Filler.
+        Melting Action in Brazing is an action that involves melting materials specifically for brazing, facilitating their transformation into a solid joint.
     </Literal>
 </AnnotationAssertion>
 
@@ -320,7 +320,7 @@
     <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
     <IRI>#BrazingSpecification</IRI>
     <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
-        Brazing Specification is a plan that encompasses Shielding Action, Melting Action in Brazing, Solidification of Filler Action, and an inclusive Heating-Melting-Solidifying Action for effective brazing operations.
+        Brazing Specification is a plan that encompasses actions for shielding, heating, melting, and solidifying materials to effectively execute brazing operations.
     </Literal>
 </AnnotationAssertion>
 
@@ -329,7 +329,7 @@
     <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
     <IRI>#Brazing</IRI>
     <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
-        Brazing is an Assembly Process that results in an assembly, necessarily including a Brazed Joint, and is defined by specific heating, melting, and solidifying actions.
+        Brazing is an assembly process that results in a unified structure involving a brazed joint, guided by specific actions of heating, melting, and solidifying.
     </Literal>
 </AnnotationAssertion>
 
@@ -338,34 +338,7 @@
     <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
     <IRI>#BrazedJoint</IRI>
     <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
-        A Brazed Joint is a Joint within Mechanical Assemblies that connects components using a brazing method.
-    </Literal>
-</AnnotationAssertion>
-
-<!-- Heating Action in Gas Brazing -->
-<AnnotationAssertion>
-    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-    <IRI>#HeatingActionInGasBrazing</IRI>
-    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
-        Heating Action in Gas Brazing is a specific operation within Gas Brazing that directly involves heating elements to facilitate the joining process.
-    </Literal>
-</AnnotationAssertion>
-
-<!-- Melting Action in Brazing -->
-<AnnotationAssertion>
-    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-    <IRI>#MeltingActionInBrazing</IRI>
-    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
-        Melting Action in Brazing describes the phase where specific materials, typically filler metals, are melted as part of the Brazing process to ensure proper joint formation.
-    </Literal>
-</AnnotationAssertion>
-
-<!-- Solidification of Filler Action -->
-<AnnotationAssertion>
-    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-    <IRI>#SolidificationOfFillerAction</IRI>
-    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
-        Solidification of Filler Action involves the cooling and solidification phase of the filler material used in Brazing to secure mechanical stability in the joint.
+        A Brazed Joint is a joint in mechanical assemblies that connects components through a brazing method, characterized by the use of a specific brazing filler.
     </Literal>
 </AnnotationAssertion>
 
@@ -374,10 +347,9 @@
     <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
     <IRI>#HeatingInGasBrazing</IRI>
     <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
-        Heating in Gas Brazing is the process of raising the temperature of the brazing components to the required levels for effective melting and fusion, typically involving a combustive heating element.
+        Heating in Gas Brazing is a process that raises the temperature of brazing components to the levels required for effective melting and fusion, typically involving a combustive heating element.
     </Literal>
 </AnnotationAssertion>
-
 
 </Ontology>
 
