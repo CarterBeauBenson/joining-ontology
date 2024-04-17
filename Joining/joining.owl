@@ -149,6 +149,7 @@
         <Literal>MechanicalAssembly(a)→Assembly(a)∧∃j Joint(j)∧haConenctor(j,a)∧∀p (hasComponentPart(a,p)→(p≠j))</Literal>
     </AnnotationAssertion>
 <!-- Annotation for Joining Process -->
+
 <AnnotationAssertion>
     <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
     <IRI>#JoiningProcess</IRI>
@@ -174,6 +175,24 @@
         A Mechanical Assembly is an Assembly that incorporates at least one Joint as a connecting component.
     </Literal>
 </AnnotationAssertion>
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <IRI>#JoiningProcess</IRI>
+    <Literal datatype="http://www.w3.org/2001/XMLSchema#string">A process is a JoiningProcess if and only if it is a PlannedProcess and for all outputs j of this process, j is a Joint.</Literal>
+</AnnotationAssertion>
+
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <IRI>#Joint</IRI>
+    <Literal datatype="http://www.w3.org/2001/XMLSchema#string">A Joint is an entity that is a FiatObjectPart and there exists a MechanicalAssembly a such that a is connected to j by a connector.</Literal>
+</AnnotationAssertion>
+
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <IRI>#MechanicalAssembly</IRI>
+    <Literal datatype="http://www.w3.org/2001/XMLSchema#string">A MechanicalAssembly is a type of Assembly that is connected to at least one Joint j, and it is composed of parts p, none of which are the joint j itself.</Literal>
+</AnnotationAssertion>
+
 
 </Ontology>
 
