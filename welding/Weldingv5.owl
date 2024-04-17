@@ -195,6 +195,17 @@
     <Declaration>
         <Class IRI="#Melting"/>
     </Declaration>
+
+<Declaration>
+    <Class IRI="#JointType1"/>
+</Declaration>
+<Declaration>
+    <Class IRI="#JointType2"/>
+</Declaration>
+<Declaration>
+    <Class IRI="#JointType3"/>
+</Declaration>
+
     <Declaration>
         <Class IRI="#MeltingActionInArcWelding"/>
     </Declaration>
@@ -1758,6 +1769,19 @@
         </ObjectIntersectionOf>
         <Class IRI="https://www.industrialontologies.org/ontology/core/Core/PlanSpecification"/>
     </SubClassOf>
+<SubClassOf>
+    <Class IRI="#JointType1"/>
+    <Class IRI="#Joint"/>
+</SubClassOf>
+<SubClassOf>
+    <Class IRI="#JointType2"/>
+    <Class IRI="#Joint"/>
+</SubClassOf>
+<SubClassOf>
+    <Class IRI="#JointType3"/>
+    <Class IRI="#Joint"/>
+</SubClassOf>
+
     <DisjointClasses>
         <Class IRI="#ArcWelding"/>
         <Class IRI="#ResistanceWelding"/>
@@ -1883,6 +1907,48 @@
         <IRI>#WeldedJoint</IRI>
         <Literal>WeldedJoint(j) ↔ ∃a,m,x hasConnector(a, j) ∧hasComponentPart(a,x) ∧ partOf(m,j) ∧ partOf(m,x)</Literal>
     </AnnotationAssertion>
+<AnnotationAssertion>
+    <AnnotationProperty IRI="https://www.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition"/>
+    <IRI>#BrazingSoldering</IRI>
+    <Literal>Brazing(p) ∨ Soldering(p) ↔ JoiningProcess(p) ∧ ∀j (hasOutput(p,j) → JointType2(j) ∧ ∀m (partOf(m,j) → ∃f FillerMaterial(f) ∧ partOf(m, f)))</Literal>
+</AnnotationAssertion>
+
+<AnnotationAssertion>
+    <AnnotationProperty IRI="https://www.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition"/>
+    <IRI>#Fastening</IRI>
+    <Literal>Fastening(p) ↔ JoiningProcess(p) ∧ ∀j (hasOutput(p,j) → JointType2(j) ∧ ∀m (partOf(m,j) → ∃f Fastener(f) ∧ partOf(m, f)))</Literal>
+</AnnotationAssertion>
+
+<AnnotationAssertion>
+    <AnnotationProperty IRI="https://www.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition"/>
+    <IRI>#Bonding</IRI>
+    <Literal>Bonding(p) ↔ JoiningProcess(p) ∧ ∀j (hasOutput(p,j) → JointType2(j) ∧ ∀m (partOf(m,j) → ∃f Adhesive(f) ∧ partOf(m, f)))</Literal>
+</AnnotationAssertion>
+
+<AnnotationAssertion>
+    <AnnotationProperty IRI="https://www.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition"/>
+    <IRI>#Fitting</IRI>
+    <Literal>Fitting(p) ↔ JoiningProcess(p) ∧ ∀j (hasOutput(p,j) → JointType3(j))</Literal>
+</AnnotationAssertion>
+
+<AnnotationAssertion>
+    <AnnotationProperty IRI="https://www.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition"/>
+    <IRI>#JointType1</IRI>
+    <Literal>JointType1(j) ↔ Joint(j) ∧ ∃a, b hasConnectedComponent(j, a) ∧ hasConnectedComponent(j, b) ∧ ∃m (partOf(m,j) ∧ (partOf(m, a) ∨ partOf(m, b)))</Literal>
+</AnnotationAssertion>
+
+<AnnotationAssertion>
+    <AnnotationProperty IRI="https://www.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition"/>
+    <IRI>#JointType2</IRI>
+    <Literal>JointType2(j) ↔ Joint(j) ∧ ∃a, b hasConnectedComponent(j, a) ∧ hasConnectedComponent(j, b) ∧ ∃z (MaterialEntity(z) ∧ (z ≠ a) ∧ (z ≠ b) ∧ ∀m(partOf(m,j) ↔ ¬partOf(m, a) ∧ ¬partOf(m, b) ∧ partOf(z)))</Literal>
+</AnnotationAssertion>
+
+<AnnotationAssertion>
+    <AnnotationProperty IRI="https://www.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/firstOrderLogicDefinition"/>
+    <IRI>#JointType3</IRI>
+    <Literal>JointType3(j) ↔ Joint(j) ∧ ∃a, b hasConnectedComponent(j, a) ∧ hasConnectedComponent(j, b) ∧ ∀m(partOf(m,j) ↔ properPartOf(m, a) ∨ properPartOf(m, b))</Literal>
+</AnnotationAssertion>
+
     <AnnotationAssertion>
         <AnnotationProperty IRI="https://www.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition"/>
         <IRI>#WeldedJoint</IRI>
@@ -2004,6 +2070,50 @@
     <IRI>#WeldedJoint</IRI>
     <Literal datatype="http://www.w3.org/2001/XMLSchema#string">A Welded Joint is a joint that exists if there is an assembly 'a' and materials 'm' and 'x' such that 'a' has a connector to 'j', 'a' includes 'x' as a component part, and both 'm' is a part of 'j' and 'm' is a part of 'x'.</Literal>
 </AnnotationAssertion>
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <IRI>#BrazingSoldering</IRI>
+    <Literal datatype="http://www.w3.org/2001/XMLSchema#string">Brazing or Soldering of a process occurs if and only if it is a JoiningProcess and for every output that is a joint, it must be of JointType2 and every part of the joint must involve a FillerMaterial.</Literal>
+</AnnotationAssertion>
+
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <IRI>#Fastening</IRI>
+    <Literal datatype="http://www.w3.org/2001/XMLSchema#string">Fastening of a process is defined as a JoiningProcess where every output that is a joint must be of JointType2 and every part of the joint must involve a Fastener.</Literal>
+</AnnotationAssertion>
+
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <IRI>#Bonding</IRI>
+    <Literal datatype="http://www.w3.org/2001/XMLSchema#string">Bonding of a process is a JoiningProcess where every output that is a joint must be of JointType2 and every part of the joint must involve an Adhesive.</Literal>
+</AnnotationAssertion>
+
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <IRI>#Fitting</IRI>
+    <Literal datatype="http://www.w3.org/2001/XMLSchema#string">Fitting of a process is a JoiningProcess where every output that is a joint must be of JointType3.</Literal>
+</AnnotationAssertion>
+
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <IRI>#JointType1</IRI>
+    <Literal datatype="http://www.w3.org/2001/XMLSchema#string">JointType1 is a Joint that has at least two connected components, with at least one material part shared between them or separate from both.</Literal>
+</AnnotationAssertion>
+
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <IRI>#JointType2</IRI>
+    <Literal datatype="http://www.w3.org/2001/XMLSchema#string">JointType2 is a Joint that has at least two connected components, involving a third material entity that is distinct from the connected components and that only shares parts with the joint but not directly with the components.</Literal>
+</AnnotationAssertion>
+
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <IRI>#JointType3</IRI>
+    <Literal datatype="http://www.w3.org/2001/XMLSchema#string">JointType3 is a Joint that involves exactly two connected components, where all parts of the joint are proper parts of one or both of the components.</Literal>
+</AnnotationAssertion>
+
+<!-- Examples for Axioms are not provided here due to space. If needed, similar annotations can be crafted for each axiom following the pattern shown for definitions. -->
+
 
 </Ontology>
 
