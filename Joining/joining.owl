@@ -148,27 +148,33 @@
         <IRI>#MechanicalAssembly</IRI>
         <Literal>MechanicalAssembly(a)→Assembly(a)∧∃j Joint(j)∧haConenctor(j,a)∧∀p (hasComponentPart(a,p)→(p≠j))</Literal>
     </AnnotationAssertion>
+<!-- Annotation for Joining Process -->
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    <IRI>#JoiningProcess</IRI>
+    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
+        A Joining Process is a Manufacturing Process that results exclusively in the creation of Joints.
+    </Literal>
+</AnnotationAssertion>
 
-<!-- Classes Definitions -->
-<Class IRI="#JoiningProcess">
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A Joining Process is a Manufacturing Process that results exclusively in the creation of Joints.</Literal>
-    </Annotation>
-</Class>
+<!-- Annotation for Joint -->
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    <IRI>#Joint</IRI>
+    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
+        A Joint is a Fiat Object Part that functions to connect components within Mechanical Assemblies exclusively.
+    </Literal>
+</AnnotationAssertion>
 
-<Class IRI="#Joint">
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A Joint is a Fiat Object Part that functions to connect components within Mechanical Assemblies exclusively.</Literal>
-    </Annotation>
-</Class>
+<!-- Annotation for Mechanical Assembly -->
+<AnnotationAssertion>
+    <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    <IRI>#MechanicalAssembly</IRI>
+    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">
+        A Mechanical Assembly is an Assembly that incorporates at least one Joint as a connecting component.
+    </Literal>
+</AnnotationAssertion>
 
-<Class IRI="#MechanicalAssembly">
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A Mechanical Assembly is an Assembly that incorporates at least one Joint as a connecting component.</Literal>
-    </Annotation>
 </Class>
 </Ontology>
 
